@@ -24,5 +24,5 @@ btn.addEventListener("click", function(e) {
     console.log("Sabor do Recheio:", saborRecheio);
     console.log("Informações Adicionais:", info);
 
-    window.location.href = "https://wa.me/5516992471396?text=Meu%20nome%20é%20"+ nome +",%20contato%20" + telefone +".%20%20Endereço:%20" + endereco + ".%20%20Tipo%20de%20bolo:%20" + bolos + ".";
+    window.location.href = "https://wa.me/numero?text=Meu%20nome%20é%20"+ nome +",%20contato%20" + telefone +".%20%20Endereço:%20" + endereco + ".%20%20Tipo%20de%20bolo:%20" + bolos + ".";
 })
