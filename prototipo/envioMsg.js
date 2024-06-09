@@ -14,15 +14,9 @@ btn.addEventListener("click", function(e) {
     const saborRecheio = document.querySelector("#sabor-recheio").value;
     const info = document.querySelector("#info").value;
 
-    console.log("Nome:", nome);
-    console.log("Telefone:", telefone);
-    console.log("Endereço:", endereco);
-    console.log("Tipo de Bolo:", bolos);
-    console.log("Quantidade:", quantidade);
-    console.log("Tamanho:", tamanho);
-    console.log("Sabor da Massa:", saborMassa);
-    console.log("Sabor do Recheio:", saborRecheio);
-    console.log("Informações Adicionais:", info);
+    urltext = "Meu nome é "+ nome +", contato " + telefone +".  Endereço: " + endereco + ". Tipo de bolo: " + bolos + ", quantidade: " + quantidade + ", tamanho: " + tamanho + ", sabor da massa: " + saborMassa + ", sabor do recheio: " + saborRecheio + ". Obs: "
 
-    window.location.href = "https://wa.me/numero?text=Meu%20nome%20é%20"+ nome +",%20contato%20" + telefone +".%20%20Endereço:%20" + endereco + ".%20%20Tipo%20de%20bolo:%20" + bolos + ".";
+    const numero = require("./numero.js")
+
+    window.location.href = "https://wa.me/"+numero+"?text=" + urltext;
 })

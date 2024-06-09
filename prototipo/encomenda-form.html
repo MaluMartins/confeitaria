@@ -10,49 +10,51 @@
 </head>
 
 <body>
-    <h3>Fazer encomenda de bolo</h3>
+    <div class="encomenda-content">
+        <h3>Fazer encomenda</h3>
     
-    <form action="">
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        <form action="">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            <br><br>
+            <label for="telefone">Número de telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Seu telefone">
+            <br><br>
+            <label for="endereco">Endereço completo</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Seu endereço">
+            <br><br>
+            <label for="bolos">Tipo de bolo</label>
+            
+            <select id="bolos" name="bolos">
+                <option value="aniversário">Aniversário</option>
+                <option value="casamento">Casamento</option>
+                <option value="bento">Bento cake</option>
+            </select>
+            <br><br>
+    
+            <label for="quantidade">Quantidade</label>
+            
+            <input type="number" name="quantidade" id="quantidade">
+            <br><br>
+            <label for="tamanho">Tamanho</label>
+            
+            <select id="tamanho" name="tamanho">
+                <option value="1">1 receita</option>
+                <option value="2">2 receitas</option>
+                <option value="3">3 receitas</option>
+            </select>
+            <br><br>
+        <label for="sabor-massa">Sabor da massa</label>
+        <input type="text" name="sabor-massa" id="sabor-massa" placeholder="Sabor da massa">
         <br><br>
-        <label for="telefone">Número de telefone</label>
-        <input type="text" id="telefone" name="telefone" placeholder="Seu telefone">
+        <label for="sabor">Sabor do recheio</label>
+        <input type="text" name="sabor-recheio" id="sabor-recheio" placeholder="Sabor do recheio">
         <br><br>
-        <label for="endereco">Endereço completo</label>
-        <input type="text" id="endereco" name="endereco" placeholder="Seu endereço">
-        <br><br>
-        <label for="bolos">Tipo de bolo</label>
-        
-        <select id="bolos" name="bolos">
-            <option value="aniversario">Aniversário</option>
-            <option value="casamento">Casamento</option>
-            <option value="bento">Bento cake</option>
-        </select>
-        <br><br>
-
-        <label for="quantidade">Quantidade</label>
-        
-        <input type="number" name="quantidade" id="quantidade">
-        <br><br>
-        <label for="tamanho">Tamanho</label>
-        
-        <select id="tamanho" name="tamanho">
-            <option value="1">1 receita</option>
-            <option value="2">2 receitas</option>
-            <option value="3">3 receitas</option>
-        </select>
-        <br><br>
-    <label for="sabor-massa">Sabor da massa</label>
-    <input type="text" name="sabor-massa" id="sabor-massa" placeholder="Sabor da massa">
-    <br><br>
-    <label for="sabor">Sabor do recheio</label>
-    <input type="text" name="sabor-recheio" id="sabor-recheio" placeholder="Sabor do recheio">
-    <br><br>
-    <label for="info">Adicione mais informações</label>
-    <textarea name="info" id="info"></textarea>
-    </form>
-    <input type="button" id="submit-btn" value="Enviar Encomenda">
+        <label for="info">Adicione mais informações</label>
+        <textarea name="info" id="info"></textarea>
+        </form>
+        <input type="button" id="submit-btn" value="Enviar Encomenda">
+    </div>  
         
     <script src="envioMsg.js"></script>
 </body>
