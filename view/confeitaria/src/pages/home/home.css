@@ -1,0 +1,21 @@
+#home-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 83vw
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+@media (min-width: 900px) {
+    #home-container {
+        margin-left: 200px;
+    }
+}

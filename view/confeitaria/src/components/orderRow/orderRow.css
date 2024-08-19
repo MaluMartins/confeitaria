@@ -1,0 +1,27 @@
+.status-nao-iniciado {
+    background-color: #ff5555;
+    color: white;
+}
+
+.status-em-andamento {
+    background-color: #ffd700;
+    color: black;
+}
+
+.status-concluido {
+    background-color: #28a745;
+    color: white;
+}
+
+.cliente:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.info-adicional {
+    max-width: 150px;
+}
+
+.deletar, .editar {
+    border: none!important;
+}

@@ -1,0 +1,8 @@
+.main-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    padding: 15px;
+}

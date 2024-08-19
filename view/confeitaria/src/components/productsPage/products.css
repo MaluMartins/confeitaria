@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw
+}
+  
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+  
+.container .btn-cad-prod:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+    transform: scale(1.0);
+}
+  
+.btn-cad-prod {
+    background-color: #FF5580;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    transition: all 0.1s linear 0.1s;
+}
+
+.btn-cad-prod:hover {
+    background-color: #e04a6d;
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,20 @@
+.order-table-container {
+    padding: 15px;
+    background-color: #fafafa; 
+}
+
+.order-table {
+    border-collapse: collapse;
+    color: #111111; 
+}
+
+.order-table th,
+.order-table td {
+    padding: 10px;
+    border: 1px solid #ce076a;
+}
+
+.order-table th {
+    background-color: #f1f1f1; 
+}
+
